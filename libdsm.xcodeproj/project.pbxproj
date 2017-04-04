@@ -16,10 +16,10 @@
 		6F1F7AFF1E91EE65007D518A /* smbClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F7AFE1E91EE65007D518A /* smbClient.m */; };
 		6F1F7B031E91EE8D007D518A /* smbDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F7B021E91EE8D007D518A /* smbDevice.m */; };
 		6F1F7B071E91F241007D518A /* smbDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F7B061E91F241007D518A /* smbDiscovery.m */; };
-		6F1F7B0C1E91F49E007D518A /* netbios_ns.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F7B0B1E91F49E007D518A /* netbios_ns.m */; };
-		6F1F7B151E922464007D518A /* netbios_query.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F7B141E922464007D518A /* netbios_query.m */; };
-		6F1F7B1D1E923AC0007D518A /* netbios_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F7B1C1E923AC0007D518A /* netbios_utils.m */; };
-		6F1F7B211E92449F007D518A /* compat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F7B201E92449F007D518A /* compat.m */; };
+		6F5AA07A1E933D5100E40539 /* compat.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0781E933D5100E40539 /* compat.c */; };
+		6F5AA0811E934CFE00E40539 /* netbios_query.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA07F1E934CFE00E40539 /* netbios_query.c */; };
+		6F5AA0841E934DF300E40539 /* netbios_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0821E934DF300E40539 /* netbios_utils.c */; };
+		6F5AA0871E934F0C00E40539 /* netbios_ns.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0851E934F0C00E40539 /* netbios_ns.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,18 +39,17 @@
 		6F1F7B021E91EE8D007D518A /* smbDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smbDevice.m; sourceTree = "<group>"; };
 		6F1F7B051E91F241007D518A /* smbDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smbDiscovery.h; sourceTree = "<group>"; };
 		6F1F7B061E91F241007D518A /* smbDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smbDiscovery.m; sourceTree = "<group>"; };
-		6F1F7B0A1E91F49E007D518A /* netbios_ns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netbios_ns.h; sourceTree = "<group>"; };
-		6F1F7B0B1E91F49E007D518A /* netbios_ns.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = netbios_ns.m; sourceTree = "<group>"; };
-		6F1F7B131E922464007D518A /* netbios_query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netbios_query.h; sourceTree = "<group>"; };
-		6F1F7B141E922464007D518A /* netbios_query.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = netbios_query.m; sourceTree = "<group>"; };
-		6F1F7B171E9227A2007D518A /* bdsm_debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bdsm_debug.h; sourceTree = "<group>"; };
-		6F1F7B181E9227A2007D518A /* netbios_defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netbios_defs.h; sourceTree = "<group>"; };
-		6F1F7B191E922A88007D518A /* bdsm_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bdsm_common.h; sourceTree = "<group>"; };
-		6F1F7B1B1E923AC0007D518A /* netbios_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netbios_utils.h; sourceTree = "<group>"; };
-		6F1F7B1C1E923AC0007D518A /* netbios_utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = netbios_utils.m; sourceTree = "<group>"; };
-		6F1F7B1F1E92449F007D518A /* compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compat.h; sourceTree = "<group>"; };
-		6F1F7B201E92449F007D518A /* compat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = compat.m; sourceTree = "<group>"; };
-		6F1F7B221E924630007D518A /* queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
+		6F5AA0781E933D5100E40539 /* compat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compat.c; sourceTree = "<group>"; };
+		6F5AA0791E933D5100E40539 /* compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compat.h; sourceTree = "<group>"; };
+		6F5AA07B1E9342D500E40539 /* bdsm_debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bdsm_debug.h; sourceTree = "<group>"; };
+		6F5AA07D1E934AAD00E40539 /* bdsm_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bdsm_common.h; sourceTree = "<group>"; };
+		6F5AA07E1E934B2D00E40539 /* netbios_defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = netbios_defs.h; sourceTree = "<group>"; };
+		6F5AA07F1E934CFE00E40539 /* netbios_query.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netbios_query.c; sourceTree = "<group>"; };
+		6F5AA0801E934CFE00E40539 /* netbios_query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netbios_query.h; sourceTree = "<group>"; };
+		6F5AA0821E934DF300E40539 /* netbios_utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netbios_utils.c; sourceTree = "<group>"; };
+		6F5AA0831E934DF300E40539 /* netbios_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netbios_utils.h; sourceTree = "<group>"; };
+		6F5AA0851E934F0C00E40539 /* netbios_ns.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netbios_ns.c; sourceTree = "<group>"; };
+		6F5AA0861E934F0C00E40539 /* netbios_ns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netbios_ns.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +157,8 @@
 		6F1F7B091E91F46D007D518A /* netbios_ns */ = {
 			isa = PBXGroup;
 			children = (
-				6F1F7B0A1E91F49E007D518A /* netbios_ns.h */,
-				6F1F7B0B1E91F49E007D518A /* netbios_ns.m */,
+				6F5AA0851E934F0C00E40539 /* netbios_ns.c */,
+				6F5AA0861E934F0C00E40539 /* netbios_ns.h */,
 			);
 			path = netbios_ns;
 			sourceTree = "<group>";
@@ -167,8 +166,8 @@
 		6F1F7B121E9223B3007D518A /* netbios_query */ = {
 			isa = PBXGroup;
 			children = (
-				6F1F7B131E922464007D518A /* netbios_query.h */,
-				6F1F7B141E922464007D518A /* netbios_query.m */,
+				6F5AA07F1E934CFE00E40539 /* netbios_query.c */,
+				6F5AA0801E934CFE00E40539 /* netbios_query.h */,
 			);
 			path = netbios_query;
 			sourceTree = "<group>";
@@ -176,10 +175,9 @@
 		6F1F7B161E92275A007D518A /* conts */ = {
 			isa = PBXGroup;
 			children = (
-				6F1F7B171E9227A2007D518A /* bdsm_debug.h */,
-				6F1F7B181E9227A2007D518A /* netbios_defs.h */,
-				6F1F7B191E922A88007D518A /* bdsm_common.h */,
-				6F1F7B221E924630007D518A /* queue.h */,
+				6F5AA07B1E9342D500E40539 /* bdsm_debug.h */,
+				6F5AA07D1E934AAD00E40539 /* bdsm_common.h */,
+				6F5AA07E1E934B2D00E40539 /* netbios_defs.h */,
 			);
 			path = conts;
 			sourceTree = "<group>";
@@ -187,8 +185,8 @@
 		6F1F7B1A1E923A92007D518A /* netbios_utils */ = {
 			isa = PBXGroup;
 			children = (
-				6F1F7B1B1E923AC0007D518A /* netbios_utils.h */,
-				6F1F7B1C1E923AC0007D518A /* netbios_utils.m */,
+				6F5AA0821E934DF300E40539 /* netbios_utils.c */,
+				6F5AA0831E934DF300E40539 /* netbios_utils.h */,
 			);
 			path = netbios_utils;
 			sourceTree = "<group>";
@@ -196,8 +194,8 @@
 		6F1F7B1E1E92448D007D518A /* compat */ = {
 			isa = PBXGroup;
 			children = (
-				6F1F7B1F1E92449F007D518A /* compat.h */,
-				6F1F7B201E92449F007D518A /* compat.m */,
+				6F5AA0781E933D5100E40539 /* compat.c */,
+				6F5AA0791E933D5100E40539 /* compat.h */,
 			);
 			path = compat;
 			sourceTree = "<group>";
@@ -275,15 +273,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1F7AE91E91EDF8007D518A /* ViewController.m in Sources */,
+				6F5AA0811E934CFE00E40539 /* netbios_query.c in Sources */,
 				6F1F7B071E91F241007D518A /* smbDiscovery.m in Sources */,
 				6F1F7B031E91EE8D007D518A /* smbDevice.m in Sources */,
-				6F1F7B1D1E923AC0007D518A /* netbios_utils.m in Sources */,
-				6F1F7B151E922464007D518A /* netbios_query.m in Sources */,
-				6F1F7B211E92449F007D518A /* compat.m in Sources */,
+				6F5AA07A1E933D5100E40539 /* compat.c in Sources */,
+				6F5AA0871E934F0C00E40539 /* netbios_ns.c in Sources */,
 				6F1F7AE61E91EDF8007D518A /* AppDelegate.m in Sources */,
 				6F1F7AE31E91EDF8007D518A /* main.m in Sources */,
 				6F1F7AFF1E91EE65007D518A /* smbClient.m in Sources */,
-				6F1F7B0C1E91F49E007D518A /* netbios_ns.m in Sources */,
+				6F5AA0841E934DF300E40539 /* netbios_utils.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +442,7 @@
 				6F1F7AF71E91EDF8007D518A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
