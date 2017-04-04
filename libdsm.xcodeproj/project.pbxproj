@@ -28,6 +28,7 @@
 		6F5AA0B11E93873B00E40539 /* smb_message.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0AF1E93873B00E40539 /* smb_message.c */; };
 		6F5AA0B51E9388BD00E40539 /* smb_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0B31E9388BD00E40539 /* smb_buffer.c */; };
 		6F5AA0BB1E9393C100E40539 /* netbios_session.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0B91E9393C100E40539 /* netbios_session.c */; };
+		6F5AA0BF1E93975A00E40539 /* smb_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0BD1E93975A00E40539 /* smb_utils.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,8 @@
 		6F5AA0B71E9388E000E40539 /* smb_packets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = smb_packets.h; sourceTree = "<group>"; };
 		6F5AA0B91E9393C100E40539 /* netbios_session.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netbios_session.c; sourceTree = "<group>"; };
 		6F5AA0BA1E9393C100E40539 /* netbios_session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netbios_session.h; sourceTree = "<group>"; };
+		6F5AA0BD1E93975A00E40539 /* smb_utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smb_utils.c; sourceTree = "<group>"; };
+		6F5AA0BE1E93975A00E40539 /* smb_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smb_utils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +188,7 @@
 				6F5AA0B21E9388AE00E40539 /* smb_buffer */,
 				6F5AA0AE1E93872800E40539 /* smb_message */,
 				6F5AA0AA1E93833E00E40539 /* smb_session */,
+				6F5AA0BC1E93974400E40539 /* smb_utils */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -382,6 +386,15 @@
 			path = netbios_session;
 			sourceTree = "<group>";
 		};
+		6F5AA0BC1E93974400E40539 /* smb_utils */ = {
+			isa = PBXGroup;
+			children = (
+				6F5AA0BD1E93975A00E40539 /* smb_utils.c */,
+				6F5AA0BE1E93975A00E40539 /* smb_utils.h */,
+			);
+			path = smb_utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -472,6 +485,7 @@
 				6F1F7AFF1E91EE65007D518A /* smbClient.m in Sources */,
 				6F5AA0841E934DF300E40539 /* netbios_utils.c in Sources */,
 				6F5AA0931E935B3700E40539 /* smbFile.m in Sources */,
+				6F5AA0BF1E93975A00E40539 /* smb_utils.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

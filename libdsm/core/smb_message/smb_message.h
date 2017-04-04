@@ -13,7 +13,7 @@
 #include "smb_defs.h"
 #include "smb_types.h"
 
-//smb_message *smb_message_new(uint8_t cmd);
+smb_message *smb_message_new(uint8_t cmd);
 
 #define SMB_MSG_INIT_PKT(pkt) do {                                      \
     memset(&pkt, 0, sizeof(pkt));                                       \

@@ -8,6 +8,7 @@
 
 #include "smb_message.h"
 #include "bdsm_debug.h"
+#include "netbios_session.h"
 
 #include <stdio.h>
 #include <stdlib.h>
