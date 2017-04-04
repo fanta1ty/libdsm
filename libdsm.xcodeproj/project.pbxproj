@@ -25,6 +25,9 @@
 		6F5AA0931E935B3700E40539 /* smbFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0921E935B3700E40539 /* smbFile.m */; };
 		6F5AA09B1E935DED00E40539 /* smbError.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA09A1E935DED00E40539 /* smbError.m */; };
 		6F5AA0AD1E93835C00E40539 /* smb_session.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0AB1E93835C00E40539 /* smb_session.c */; };
+		6F5AA0B11E93873B00E40539 /* smb_message.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0AF1E93873B00E40539 /* smb_message.c */; };
+		6F5AA0B51E9388BD00E40539 /* smb_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0B31E9388BD00E40539 /* smb_buffer.c */; };
+		6F5AA0BB1E9393C100E40539 /* netbios_session.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0B91E9393C100E40539 /* netbios_session.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +70,13 @@
 		6F5AA0A81E935F6600E40539 /* smb_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = smb_types.h; sourceTree = "<group>"; };
 		6F5AA0AB1E93835C00E40539 /* smb_session.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smb_session.c; sourceTree = "<group>"; };
 		6F5AA0AC1E93835C00E40539 /* smb_session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smb_session.h; sourceTree = "<group>"; };
+		6F5AA0AF1E93873B00E40539 /* smb_message.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smb_message.c; sourceTree = "<group>"; };
+		6F5AA0B01E93873B00E40539 /* smb_message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smb_message.h; sourceTree = "<group>"; };
+		6F5AA0B31E9388BD00E40539 /* smb_buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smb_buffer.c; sourceTree = "<group>"; };
+		6F5AA0B41E9388BD00E40539 /* smb_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smb_buffer.h; sourceTree = "<group>"; };
+		6F5AA0B71E9388E000E40539 /* smb_packets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = smb_packets.h; sourceTree = "<group>"; };
+		6F5AA0B91E9393C100E40539 /* netbios_session.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netbios_session.c; sourceTree = "<group>"; };
+		6F5AA0BA1E9393C100E40539 /* netbios_session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netbios_session.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +180,10 @@
 				6F1F7B161E92275A007D518A /* conts */,
 				6F1F7B091E91F46D007D518A /* netbios_ns */,
 				6F1F7B121E9223B3007D518A /* netbios_query */,
+				6F5AA0B81E9393A900E40539 /* netbios_session */,
 				6F1F7B1A1E923A92007D518A /* netbios_utils */,
+				6F5AA0B21E9388AE00E40539 /* smb_buffer */,
+				6F5AA0AE1E93872800E40539 /* smb_message */,
 				6F5AA0AA1E93833E00E40539 /* smb_session */,
 			);
 			path = core;
@@ -197,6 +210,7 @@
 		6F1F7B161E92275A007D518A /* conts */ = {
 			isa = PBXGroup;
 			children = (
+				6F5AA0B61E9388CE00E40539 /* smb_packets */,
 				6F5AA0A71E935F3700E40539 /* smb_types */,
 				6F5AA0A51E935EE500E40539 /* smb_defs */,
 				6F5AA0A01E935E8800E40539 /* netbios_defs */,
@@ -333,6 +347,41 @@
 			path = smb_session;
 			sourceTree = "<group>";
 		};
+		6F5AA0AE1E93872800E40539 /* smb_message */ = {
+			isa = PBXGroup;
+			children = (
+				6F5AA0AF1E93873B00E40539 /* smb_message.c */,
+				6F5AA0B01E93873B00E40539 /* smb_message.h */,
+			);
+			path = smb_message;
+			sourceTree = "<group>";
+		};
+		6F5AA0B21E9388AE00E40539 /* smb_buffer */ = {
+			isa = PBXGroup;
+			children = (
+				6F5AA0B31E9388BD00E40539 /* smb_buffer.c */,
+				6F5AA0B41E9388BD00E40539 /* smb_buffer.h */,
+			);
+			path = smb_buffer;
+			sourceTree = "<group>";
+		};
+		6F5AA0B61E9388CE00E40539 /* smb_packets */ = {
+			isa = PBXGroup;
+			children = (
+				6F5AA0B71E9388E000E40539 /* smb_packets.h */,
+			);
+			path = smb_packets;
+			sourceTree = "<group>";
+		};
+		6F5AA0B81E9393A900E40539 /* netbios_session */ = {
+			isa = PBXGroup;
+			children = (
+				6F5AA0B91E9393C100E40539 /* netbios_session.c */,
+				6F5AA0BA1E9393C100E40539 /* netbios_session.h */,
+			);
+			path = netbios_session;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -406,9 +455,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F5AA0AD1E93835C00E40539 /* smb_session.c in Sources */,
+				6F5AA0BB1E9393C100E40539 /* netbios_session.c in Sources */,
 				6F1F7AE91E91EDF8007D518A /* ViewController.m in Sources */,
+				6F5AA0B51E9388BD00E40539 /* smb_buffer.c in Sources */,
 				6F5AA0811E934CFE00E40539 /* netbios_query.c in Sources */,
 				6F5AA08F1E935A5600E40539 /* smbShare.m in Sources */,
+				6F5AA0B11E93873B00E40539 /* smb_message.c in Sources */,
 				6F5AA08B1E935A2800E40539 /* smbFileServer.m in Sources */,
 				6F1F7B071E91F241007D518A /* smbDiscovery.m in Sources */,
 				6F1F7B031E91EE8D007D518A /* smbDevice.m in Sources */,

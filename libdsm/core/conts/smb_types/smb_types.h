@@ -11,6 +11,14 @@
 
 #include <stddef.h>
 #include <stdint.h>
+#include <stdbool.h>
+
+#if !defined _WIN32
+#   include <netinet/ip.h>
+#else
+#   include <winsock2.h>
+#endif
+
 #define _FILE_OFFSET_BITS           64
 
 #if defined(__ANDROID__)
