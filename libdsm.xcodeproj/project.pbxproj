@@ -29,6 +29,11 @@
 		6F5AA0B51E9388BD00E40539 /* smb_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0B31E9388BD00E40539 /* smb_buffer.c */; };
 		6F5AA0BB1E9393C100E40539 /* netbios_session.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0B91E9393C100E40539 /* netbios_session.c */; };
 		6F5AA0BF1E93975A00E40539 /* smb_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0BD1E93975A00E40539 /* smb_utils.c */; };
+		6F5AA0C61E93A31B00E40539 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5AA0C51E93A31B00E40539 /* libiconv.tbd */; };
+		6F5AA0DE1E93AD3400E40539 /* libtasn1-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5AA0DD1E93AD3400E40539 /* libtasn1-iOS.a */; };
+		6F5AA0E21E93B00700E40539 /* smb_session_msg.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0E01E93B00700E40539 /* smb_session_msg.c */; };
+		6F5AA0E61E93B15F00E40539 /* smb_fd.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0E41E93B15F00E40539 /* smb_fd.c */; };
+		6F5AA0EA1E93B32400E40539 /* smb_ntlm.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AA0E81E93B32400E40539 /* smb_ntlm.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +85,15 @@
 		6F5AA0BA1E9393C100E40539 /* netbios_session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netbios_session.h; sourceTree = "<group>"; };
 		6F5AA0BD1E93975A00E40539 /* smb_utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smb_utils.c; sourceTree = "<group>"; };
 		6F5AA0BE1E93975A00E40539 /* smb_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smb_utils.h; sourceTree = "<group>"; };
+		6F5AA0C51E93A31B00E40539 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		6F5AA0DC1E93AD1300E40539 /* libtasn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libtasn1.h; sourceTree = "<group>"; };
+		6F5AA0DD1E93AD3400E40539 /* libtasn1-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libtasn1-iOS.a"; sourceTree = "<group>"; };
+		6F5AA0E01E93B00700E40539 /* smb_session_msg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smb_session_msg.c; sourceTree = "<group>"; };
+		6F5AA0E11E93B00700E40539 /* smb_session_msg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smb_session_msg.h; sourceTree = "<group>"; };
+		6F5AA0E41E93B15F00E40539 /* smb_fd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smb_fd.c; sourceTree = "<group>"; };
+		6F5AA0E51E93B15F00E40539 /* smb_fd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smb_fd.h; sourceTree = "<group>"; };
+		6F5AA0E81E93B32400E40539 /* smb_ntlm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smb_ntlm.c; sourceTree = "<group>"; };
+		6F5AA0E91E93B32400E40539 /* smb_ntlm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smb_ntlm.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F5AA0C61E93A31B00E40539 /* libiconv.tbd in Frameworks */,
+				6F5AA0DE1E93AD3400E40539 /* libtasn1-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +114,7 @@
 			children = (
 				6F1F7AE01E91EDF8007D518A /* libdsm */,
 				6F1F7ADF1E91EDF8007D518A /* Products */,
+				6F5AA0C41E93A31B00E40539 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +129,7 @@
 		6F1F7AE01E91EDF8007D518A /* libdsm */ = {
 			isa = PBXGroup;
 			children = (
+				6F5AA0C01E939D5900E40539 /* libtasn1 */,
 				6F1F7B081E91F444007D518A /* core */,
 				6F1F7AF81E91EE19007D518A /* model */,
 				6F1F7AE41E91EDF8007D518A /* AppDelegate.h */,
@@ -180,14 +198,17 @@
 			isa = PBXGroup;
 			children = (
 				6F1F7B1E1E92448D007D518A /* compat */,
-				6F1F7B161E92275A007D518A /* conts */,
+				6F1F7B161E92275A007D518A /* consts */,
 				6F1F7B091E91F46D007D518A /* netbios_ns */,
 				6F1F7B121E9223B3007D518A /* netbios_query */,
 				6F5AA0B81E9393A900E40539 /* netbios_session */,
 				6F1F7B1A1E923A92007D518A /* netbios_utils */,
 				6F5AA0B21E9388AE00E40539 /* smb_buffer */,
+				6F5AA0E31E93B15100E40539 /* smb_fd */,
 				6F5AA0AE1E93872800E40539 /* smb_message */,
+				6F5AA0E71E93B30200E40539 /* smb_ntlm */,
 				6F5AA0AA1E93833E00E40539 /* smb_session */,
+				6F5AA0DF1E93AFEB00E40539 /* smb_session_msg */,
 				6F5AA0BC1E93974400E40539 /* smb_utils */,
 			);
 			path = core;
@@ -211,7 +232,7 @@
 			path = netbios_query;
 			sourceTree = "<group>";
 		};
-		6F1F7B161E92275A007D518A /* conts */ = {
+		6F1F7B161E92275A007D518A /* consts */ = {
 			isa = PBXGroup;
 			children = (
 				6F5AA0B61E9388CE00E40539 /* smb_packets */,
@@ -221,7 +242,7 @@
 				6F5AA09F1E935E7B00E40539 /* bdsm_common */,
 				6F5AA09D1E935E5B00E40539 /* bdsm_debug */,
 			);
-			path = conts;
+			path = consts;
 			sourceTree = "<group>";
 		};
 		6F1F7B1A1E923A92007D518A /* netbios_utils */ = {
@@ -395,6 +416,58 @@
 			path = smb_utils;
 			sourceTree = "<group>";
 		};
+		6F5AA0C01E939D5900E40539 /* libtasn1 */ = {
+			isa = PBXGroup;
+			children = (
+				6F5AA0DD1E93AD3400E40539 /* libtasn1-iOS.a */,
+				6F5AA0DB1E93ACF600E40539 /* consts */,
+			);
+			path = libtasn1;
+			sourceTree = "<group>";
+		};
+		6F5AA0C41E93A31B00E40539 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F5AA0C51E93A31B00E40539 /* libiconv.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F5AA0DB1E93ACF600E40539 /* consts */ = {
+			isa = PBXGroup;
+			children = (
+				6F5AA0DC1E93AD1300E40539 /* libtasn1.h */,
+			);
+			path = consts;
+			sourceTree = "<group>";
+		};
+		6F5AA0DF1E93AFEB00E40539 /* smb_session_msg */ = {
+			isa = PBXGroup;
+			children = (
+				6F5AA0E01E93B00700E40539 /* smb_session_msg.c */,
+				6F5AA0E11E93B00700E40539 /* smb_session_msg.h */,
+			);
+			path = smb_session_msg;
+			sourceTree = "<group>";
+		};
+		6F5AA0E31E93B15100E40539 /* smb_fd */ = {
+			isa = PBXGroup;
+			children = (
+				6F5AA0E41E93B15F00E40539 /* smb_fd.c */,
+				6F5AA0E51E93B15F00E40539 /* smb_fd.h */,
+			);
+			path = smb_fd;
+			sourceTree = "<group>";
+		};
+		6F5AA0E71E93B30200E40539 /* smb_ntlm */ = {
+			isa = PBXGroup;
+			children = (
+				6F5AA0E81E93B32400E40539 /* smb_ntlm.c */,
+				6F5AA0E91E93B32400E40539 /* smb_ntlm.h */,
+			);
+			path = smb_ntlm;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -480,10 +553,13 @@
 				6F5AA07A1E933D5100E40539 /* compat.c in Sources */,
 				6F5AA0871E934F0C00E40539 /* netbios_ns.c in Sources */,
 				6F1F7AE61E91EDF8007D518A /* AppDelegate.m in Sources */,
+				6F5AA0E61E93B15F00E40539 /* smb_fd.c in Sources */,
 				6F5AA09B1E935DED00E40539 /* smbError.m in Sources */,
+				6F5AA0EA1E93B32400E40539 /* smb_ntlm.c in Sources */,
 				6F1F7AE31E91EDF8007D518A /* main.m in Sources */,
 				6F1F7AFF1E91EE65007D518A /* smbClient.m in Sources */,
 				6F5AA0841E934DF300E40539 /* netbios_utils.c in Sources */,
+				6F5AA0E21E93B00700E40539 /* smb_session_msg.c in Sources */,
 				6F5AA0931E935B3700E40539 /* smbFile.m in Sources */,
 				6F5AA0BF1E93975A00E40539 /* smb_utils.c in Sources */,
 			);
@@ -609,6 +685,10 @@
 				INFOPLIST_FILE = libdsm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libdsm/libtasn1",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = trekvn.libdsm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -622,6 +702,10 @@
 				INFOPLIST_FILE = libdsm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libdsm/libtasn1",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = trekvn.libdsm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

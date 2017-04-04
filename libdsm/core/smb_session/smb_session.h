@@ -11,7 +11,6 @@
 
 #include <stdio.h>
 #include <stddef.h>
-#include <stdbool.h>
 
 #include "smb_defs.h"
 #include "smb_types.h"
@@ -102,5 +101,5 @@ int smb_session_supports(smb_session *s, int what);
  */
 uint32_t smb_session_get_nt_status(smb_session *s);
 
-//bool smb_session_check_nt_status(smb_session *s, smb_message *msg);
+bool smb_session_check_nt_status(smb_session *s, smb_message *msg);
 #endif /* smb_session_h */

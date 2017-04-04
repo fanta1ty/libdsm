@@ -269,7 +269,8 @@ SMB_PACKED_START typedef struct {
         uint8_t         padding;
 }SMB_PACKED_END smb_write_req;
 
-//<- Write File
+/*!Write File
+ */
 SMB_PACKED_START typedef struct {
     uint8_t         wct;                                // 6
     SMB_ANDX_MEMBERS

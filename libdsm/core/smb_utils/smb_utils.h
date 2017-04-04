@@ -34,6 +34,6 @@ size_t smb_to_utf16(const char *src, size_t src_len, char **dst);
  * be set to NULL
  *\returns The size of the decoded string in bytes
  */
-size_t      smb_from_utf16(const char *src, size_t src_len, char **dst);
+size_t smb_from_utf16(const char *src, size_t src_len, char **dst);
 
 #endif /* smb_utils_h */
