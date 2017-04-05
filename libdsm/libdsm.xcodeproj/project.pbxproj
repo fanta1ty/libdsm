@@ -13,6 +13,8 @@
 		76380E981E9544A300B92231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76380E961E9544A300B92231 /* Main.storyboard */; };
 		76380E9A1E9544A300B92231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76380E991E9544A300B92231 /* Assets.xcassets */; };
 		76380E9D1E9544A300B92231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76380E9B1E9544A300B92231 /* LaunchScreen.storyboard */; };
+		76380EA81E954CF200B92231 /* libtasn1-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76380EA71E954CF200B92231 /* libtasn1-iOS.a */; };
+		76380EAB1E954D0500B92231 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 76380EAA1E954D0500B92231 /* libiconv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		76380E991E9544A300B92231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76380E9C1E9544A300B92231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76380E9E1E9544A300B92231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76380EA61E954CD900B92231 /* libtasn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libtasn1.h; sourceTree = "<group>"; };
+		76380EA71E954CF200B92231 /* libtasn1-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libtasn1-iOS.a"; sourceTree = "<group>"; };
+		76380EAA1E954D0500B92231 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76380EAB1E954D0500B92231 /* libiconv.tbd in Frameworks */,
+				76380EA81E954CF200B92231 /* libtasn1-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,7 @@
 			children = (
 				76380E8C1E9544A300B92231 /* libdsm */,
 				76380E8B1E9544A300B92231 /* Products */,
+				76380EA91E954D0500B92231 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +66,7 @@
 		76380E8C1E9544A300B92231 /* libdsm */ = {
 			isa = PBXGroup;
 			children = (
+				76380EA51E954C9F00B92231 /* libtasn1 */,
 				76380EA41E9544BF00B92231 /* libdsm */,
 				76380E901E9544A300B92231 /* AppDelegate.h */,
 				76380E911E9544A300B92231 /* AppDelegate.m */,
@@ -85,6 +94,23 @@
 			children = (
 			);
 			path = libdsm;
+			sourceTree = "<group>";
+		};
+		76380EA51E954C9F00B92231 /* libtasn1 */ = {
+			isa = PBXGroup;
+			children = (
+				76380EA71E954CF200B92231 /* libtasn1-iOS.a */,
+				76380EA61E954CD900B92231 /* libtasn1.h */,
+			);
+			path = libtasn1;
+			sourceTree = "<group>";
+		};
+		76380EA91E954D0500B92231 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76380EAA1E954D0500B92231 /* libiconv.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +311,10 @@
 				INFOPLIST_FILE = libdsm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libdsm/libtasn1",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.trek2000.libdsm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -298,6 +328,10 @@
 				INFOPLIST_FILE = libdsm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libdsm/libtasn1",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.trek2000.libdsm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
