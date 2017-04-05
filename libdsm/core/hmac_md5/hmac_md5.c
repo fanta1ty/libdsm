@@ -5,7 +5,7 @@
 //  Created by Thinh Nguyen Duc on 4/4/17.
 //  Copyright © 2017 trekvn. All rights reserved.
 //
-
+#include "config.h"
 #include "hmac_md5.h"
 
 #include <assert.h>

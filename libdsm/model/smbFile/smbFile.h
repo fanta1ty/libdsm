@@ -53,8 +53,6 @@ typedef NS_OPTIONS(NSUInteger, smbFileMode) {
 
 - (void)close:(nullable void (^)(NSError *_Nullable error))completion;
 
-//- (void)write:(nonnull NSData *)data completion:(nullable void (^)(long bytesWritten, NSError *_Nullable error))completion;
-
 - (void)write:(nonnull NSData *_Nullable (^)(unsigned long long))dataHandler
      progress:(nullable void (^)(unsigned long long bytesWrittenTotal, long bytesWrittenLast,
                                  BOOL complete, NSError *_Nullable error))progress;

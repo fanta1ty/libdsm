@@ -5,8 +5,9 @@
 //  Created by trekvn on 4/4/17.
 //  Copyright © 2017 trekvn. All rights reserved.
 //
-
+#include "config.h"
 #include "smb_fd.h"
+
 #include <assert.h>
 
 void smb_session_share_add(smb_session *s, smb_share *share) {

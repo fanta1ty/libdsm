@@ -5,11 +5,11 @@
 //  Created by trekvn on 4/4/17.
 //  Copyright © 2017 trekvn. All rights reserved.
 //
-
+#include "config.h"
 #include "smb_buffer.h"
+
 #include <assert.h>
 #include <stdlib.h>
-#include <alloca.h>
 
 #ifdef HAVE_ALLOCA_H
 #   include <alloca.h>

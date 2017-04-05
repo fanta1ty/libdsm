@@ -7,6 +7,7 @@
 //
 
 #include "netbios_ns.h"
+#include "config.h"
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -19,12 +20,6 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <assert.h>
-#include <ifaddrs.h>
-#include <arpa/inet.h>
-#include <sys/queue.h>
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <net/if.h>
 
 #ifdef HAVE_SYS_QUEUE_H
 #   include <sys/queue.h>
@@ -41,11 +36,11 @@
 #endif
 
 #ifndef _WIN32
-#   include <sys/types.h>
-#   ifdef HAVE_IFADDRS_H
-#       include <ifaddrs.h>
-#   endif
-#   include <net/if.h>
+# include <sys/types.h>
+# ifdef HAVE_IFADDRS_H
+#  include <ifaddrs.h>
+# endif
+# include <net/if.h>
 #endif
 
 #include "bdsm_debug.h"
@@ -247,7 +242,7 @@ static void netbios_ns_broadcast_packet(netbios_ns* ns, netbios_query* q) {
         
         uint32_t ip = sin->sin_addr.s_addr;
         if (netbios_ns_send_packet(ns, q, ip) == -1)
-            BDSM_perror("Failed to broadcast");
+            bdsm_perror("Failed to broadcast");
     }
     freeifaddrs(addrs);
 }

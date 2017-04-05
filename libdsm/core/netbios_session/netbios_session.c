@@ -11,6 +11,7 @@
 #include "bdsm_debug.h"
 #include "compat.h"
 #include "netbios_utils.h"
+#include "config.h"
 
 #include <assert.h>
 #include <stdio.h>
@@ -18,16 +19,13 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdbool.h>
-#include <errno.h>
-#include <arpa/inet.h>
-#include <sys/socket.h>
 
 #ifdef HAVE_ARPA_INET_H
-    #include <arpa/inet.h>
+#   include <arpa/inet.h>
 #endif
 
 #ifdef HAVE_SYS_SOCKET_H
-    #include <sys/socket.h>
+#   include <sys/socket.h>
 #endif
 
 static int open_socket_and_connect(netbios_session *s) {

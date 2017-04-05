@@ -137,11 +137,10 @@ extern "C"
   /*****************************************/
   /* For the on-disk format of ASN.1 trees */
   /*****************************************/
-  struct asn1_static_node_st
-  {
-    const char *name;		/* Node name */
-    unsigned int type;		/* Node type */
-    const void *value;		/* Node value */
+  struct asn1_static_node_st {
+    const char      *name;		/* Node name */
+    unsigned int    type;		/* Node type */
+    const void      *value;		/* Node value */
   };
   typedef struct asn1_static_node_st asn1_static_node;
 

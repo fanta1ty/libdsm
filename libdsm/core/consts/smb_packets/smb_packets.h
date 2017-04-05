@@ -10,7 +10,6 @@
 #define smb_packets_h
 
 #include <stdint.h>
-
 #include "bdsm_common.h"
 
 #define SMB_ANDX_MEMBERS                                                                \

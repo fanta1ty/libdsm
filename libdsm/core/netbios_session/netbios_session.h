@@ -12,7 +12,6 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stddef.h>
-#include <netinet/in.h>
 
 #include "netbios_defs.h"
 

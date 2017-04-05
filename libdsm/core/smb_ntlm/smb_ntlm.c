@@ -6,6 +6,7 @@
 //  Copyright © 2017 trekvn. All rights reserved.
 //
 
+#include "config.h"
 #include "smb_ntlm.h"
 #include "compat.h"
 #include "bdsm_debug.h"
@@ -14,6 +15,7 @@
 #include "rc4.h"
 #include "hmac_md5.h"
 #include "smb_utils.h"
+#include "config.h"
 
 #include <assert.h>
 #include <ctype.h>
@@ -23,7 +25,6 @@
 #include <sys/time.h>
 #include <unistd.h>
 #include <fcntl.h>
-#include <string.h>
 
 #ifdef _WIN32
 #   define _CRT_RAND_S
@@ -39,7 +40,7 @@ uint64_t smb_ntlm_generate_challenge() {
 #if !defined(_WIN32)
     uint64_t result;
     int fd;
-    fd = open("/dev/random", O_RDONLY);
+    fd = open(URANDOM, O_RDONLY);
     if (fd >= 0) {
         while(read(fd, (void *)&result, sizeof(result)) != sizeof(result))
             ;

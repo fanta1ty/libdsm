@@ -5,7 +5,7 @@
 //  Created by trekvn on 4/4/17.
 //  Copyright © 2017 trekvn. All rights reserved.
 //
-
+#include "config.h"
 #include "smb_utils.h"
 #include "bdsm_debug.h"
 
@@ -16,7 +16,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <errno.h>
-#include <langinfo.h>
 
 #if HAVE_LANGINFO_H && !defined( __APPLE__ )
 #   include <langinfo.h>

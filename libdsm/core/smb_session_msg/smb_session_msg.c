@@ -6,9 +6,11 @@
 //  Copyright © 2017 trekvn. All rights reserved.
 //
 
+#include "config.h"
 #include "smb_session_msg.h"
 #include "smb_session.h"
 #include "smb_message.h"
+
 
 #include <assert.h>
 

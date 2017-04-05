@@ -9,6 +9,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 
+#include "config.h"
 #include "netbios_utils.h"
 
 static short  nibble_encode(char c) {
