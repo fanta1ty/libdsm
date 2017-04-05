@@ -6,7 +6,7 @@
 <p>&ensp;lib Defective SMb (libDSM) is a SMB protocol client implementation in pure old C, with a lot less features than Samba but is simpler, and has with a more permissive license (currently LGPL + proprietary).<br>
 &ensp;The initial goal of this project is to have a library that can access most SMB shares to read files and that has with a license compatible with the iOS/Android/WinRT appstores in order to integrate it into VLC for iOS and VLC for Android.</p>
 <h2>Features</h2>
-<p>&ensp;Here's a list of the currently supported features:
+<p>&ensp;Here's a list of the currently supported features:<br>
 &ensp;&ensp;&ensp;- NETBIOS<br>
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;+ Basic bi-directionnal NETBIOS name resolution<br>
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;+ Hacky LAN SMB servers discovery (Listing all the smb servers on the LAN, no WINS, etc.)<br>
