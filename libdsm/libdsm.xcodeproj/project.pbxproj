@@ -31,6 +31,7 @@
 		76380EA61E954CD900B92231 /* libtasn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libtasn1.h; sourceTree = "<group>"; };
 		76380EA71E954CF200B92231 /* libtasn1-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libtasn1-iOS.a"; sourceTree = "<group>"; };
 		76380EAA1E954D0500B92231 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		76380EAF1E954F1900B92231 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +93,12 @@
 		76380EA41E9544BF00B92231 /* libdsm */ = {
 			isa = PBXGroup;
 			children = (
+				76380EBB1E95544E00B92231 /* mdx */,
+				76380EB71E95542300B92231 /* hmac_md5 */,
+				76380EB31E954FE100B92231 /* compat */,
+				76380EAD1E954EEF00B92231 /* const */,
+				76380EB11E954F7000B92231 /* netbios */,
+				76380EB01E954F6200B92231 /* smb */,
 			);
 			path = libdsm;
 			sourceTree = "<group>";
@@ -111,6 +118,65 @@
 				76380EAA1E954D0500B92231 /* libiconv.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76380EAD1E954EEF00B92231 /* const */ = {
+			isa = PBXGroup;
+			children = (
+				76380EAE1E954F0100B92231 /* config */,
+			);
+			path = const;
+			sourceTree = "<group>";
+		};
+		76380EAE1E954F0100B92231 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				76380EAF1E954F1900B92231 /* config.h */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		76380EB01E954F6200B92231 /* smb */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = smb;
+			sourceTree = "<group>";
+		};
+		76380EB11E954F7000B92231 /* netbios */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = netbios;
+			sourceTree = "<group>";
+		};
+		76380EB31E954FE100B92231 /* compat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = compat;
+			sourceTree = "<group>";
+		};
+		76380EB71E95542300B92231 /* hmac_md5 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = hmac_md5;
+			sourceTree = "<group>";
+		};
+		76380EBB1E95544E00B92231 /* mdx */ = {
+			isa = PBXGroup;
+			children = (
+				76380EBC1E95545900B92231 /* md5 */,
+			);
+			path = mdx;
+			sourceTree = "<group>";
+		};
+		76380EBC1E95545900B92231 /* md5 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = md5;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
