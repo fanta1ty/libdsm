@@ -8,8 +8,8 @@
   The initial goal of this project is to have a library that can access most SMB shares to read files and that has with a license compatible with the iOS/Android/WinRT appstores in order to integrate it into VLC for iOS and VLC for Android.
   
 <h2>Features</h2>
-Here's a list of the currently supported features:
-  - NETBIOS
+     Here's a list of the currently supported features:
+     NETBIOS
       + Basic bi-directionnal NETBIOS name resolution
       + Hacky LAN SMB servers discovery (Listing all the smb servers on the LAN, no WINS, etc.)
       + Basic NETBIOS Session transport layer
