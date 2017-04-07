@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  libdsm
 //
-//  Created by Thinh Nguyen Duc on 4/5/17.
-//  Copyright © 2017 trek2000. All rights reserved.
+//  Created by trekvn on 4/7/17.
+//  Copyright © 2017 trekvn. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

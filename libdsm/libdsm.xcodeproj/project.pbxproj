@@ -7,188 +7,219 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		76380E8F1E9544A300B92231 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76380E8E1E9544A300B92231 /* main.m */; };
-		76380E921E9544A300B92231 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76380E911E9544A300B92231 /* AppDelegate.m */; };
-		76380E951E9544A300B92231 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76380E941E9544A300B92231 /* ViewController.m */; };
-		76380E981E9544A300B92231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76380E961E9544A300B92231 /* Main.storyboard */; };
-		76380E9A1E9544A300B92231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76380E991E9544A300B92231 /* Assets.xcassets */; };
-		76380E9D1E9544A300B92231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76380E9B1E9544A300B92231 /* LaunchScreen.storyboard */; };
-		76380EA81E954CF200B92231 /* libtasn1-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76380EA71E954CF200B92231 /* libtasn1-iOS.a */; };
-		76380EAB1E954D0500B92231 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 76380EAA1E954D0500B92231 /* libiconv.tbd */; };
+		6F42D4981E97910E00C0B68B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F42D4971E97910E00C0B68B /* main.m */; };
+		6F42D49B1E97910E00C0B68B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F42D49A1E97910E00C0B68B /* AppDelegate.m */; };
+		6F42D49E1E97910E00C0B68B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F42D49D1E97910E00C0B68B /* ViewController.m */; };
+		6F42D4A11E97910E00C0B68B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F42D49F1E97910E00C0B68B /* Main.storyboard */; };
+		6F42D4A31E97910E00C0B68B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F42D4A21E97910E00C0B68B /* Assets.xcassets */; };
+		6F42D4A61E97910E00C0B68B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F42D4A41E97910E00C0B68B /* LaunchScreen.storyboard */; };
+		6F42D4C41E97914B00C0B68B /* compat.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F42D4B01E97914B00C0B68B /* compat.c */; };
+		6F42D4C51E97914B00C0B68B /* netbios_ns.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F42D4BF1E97914B00C0B68B /* netbios_ns.c */; };
+		6F42D4C61E97914B00C0B68B /* netbios_query.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F42D4C21E97914B00C0B68B /* netbios_query.c */; };
+		6F42D4C91E9791B100C0B68B /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F42D4C81E9791B100C0B68B /* libiconv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		76380E8A1E9544A300B92231 /* libdsm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = libdsm.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		76380E8E1E9544A300B92231 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		76380E901E9544A300B92231 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		76380E911E9544A300B92231 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		76380E931E9544A300B92231 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		76380E941E9544A300B92231 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		76380E971E9544A300B92231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		76380E991E9544A300B92231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		76380E9C1E9544A300B92231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		76380E9E1E9544A300B92231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76380EA61E954CD900B92231 /* libtasn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libtasn1.h; sourceTree = "<group>"; };
-		76380EA71E954CF200B92231 /* libtasn1-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libtasn1-iOS.a"; sourceTree = "<group>"; };
-		76380EAA1E954D0500B92231 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
-		76380EAF1E954F1900B92231 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		6F42D4931E97910E00C0B68B /* libdsm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = libdsm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F42D4971E97910E00C0B68B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6F42D4991E97910E00C0B68B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6F42D49A1E97910E00C0B68B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6F42D49C1E97910E00C0B68B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6F42D49D1E97910E00C0B68B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6F42D4A01E97910E00C0B68B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F42D4A21E97910E00C0B68B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F42D4A51E97910E00C0B68B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F42D4A71E97910E00C0B68B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F42D4B01E97914B00C0B68B /* compat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compat.c; sourceTree = "<group>"; };
+		6F42D4B11E97914B00C0B68B /* compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compat.h; sourceTree = "<group>"; };
+		6F42D4B51E97914B00C0B68B /* bdsm_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bdsm_common.h; sourceTree = "<group>"; };
+		6F42D4B71E97914B00C0B68B /* bdsm_debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bdsm_debug.h; sourceTree = "<group>"; };
+		6F42D4B91E97914B00C0B68B /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		6F42D4BC1E97914B00C0B68B /* netbios_defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netbios_defs.h; sourceTree = "<group>"; };
+		6F42D4BF1E97914B00C0B68B /* netbios_ns.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netbios_ns.c; sourceTree = "<group>"; };
+		6F42D4C01E97914B00C0B68B /* netbios_ns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netbios_ns.h; sourceTree = "<group>"; };
+		6F42D4C21E97914B00C0B68B /* netbios_query.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netbios_query.c; sourceTree = "<group>"; };
+		6F42D4C31E97914B00C0B68B /* netbios_query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netbios_query.h; sourceTree = "<group>"; };
+		6F42D4C81E9791B100C0B68B /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		76380E871E9544A300B92231 /* Frameworks */ = {
+		6F42D4901E97910E00C0B68B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76380EAB1E954D0500B92231 /* libiconv.tbd in Frameworks */,
-				76380EA81E954CF200B92231 /* libtasn1-iOS.a in Frameworks */,
+				6F42D4C91E9791B100C0B68B /* libiconv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		76380E811E9544A300B92231 = {
+		6F42D48A1E97910E00C0B68B = {
 			isa = PBXGroup;
 			children = (
-				76380E8C1E9544A300B92231 /* libdsm */,
-				76380E8B1E9544A300B92231 /* Products */,
-				76380EA91E954D0500B92231 /* Frameworks */,
+				6F42D4951E97910E00C0B68B /* libdsm */,
+				6F42D4941E97910E00C0B68B /* Products */,
+				6F42D4C71E9791B100C0B68B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		76380E8B1E9544A300B92231 /* Products */ = {
+		6F42D4941E97910E00C0B68B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				76380E8A1E9544A300B92231 /* libdsm.app */,
+				6F42D4931E97910E00C0B68B /* libdsm.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		76380E8C1E9544A300B92231 /* libdsm */ = {
+		6F42D4951E97910E00C0B68B /* libdsm */ = {
 			isa = PBXGroup;
 			children = (
-				76380EA51E954C9F00B92231 /* libtasn1 */,
-				76380EA41E9544BF00B92231 /* libdsm */,
-				76380E901E9544A300B92231 /* AppDelegate.h */,
-				76380E911E9544A300B92231 /* AppDelegate.m */,
-				76380E931E9544A300B92231 /* ViewController.h */,
-				76380E941E9544A300B92231 /* ViewController.m */,
-				76380E961E9544A300B92231 /* Main.storyboard */,
-				76380E991E9544A300B92231 /* Assets.xcassets */,
-				76380E9B1E9544A300B92231 /* LaunchScreen.storyboard */,
-				76380E9E1E9544A300B92231 /* Info.plist */,
-				76380E8D1E9544A300B92231 /* Supporting Files */,
+				6F42D4AE1E97914B00C0B68B /* libdsm */,
+				6F42D4991E97910E00C0B68B /* AppDelegate.h */,
+				6F42D49A1E97910E00C0B68B /* AppDelegate.m */,
+				6F42D49C1E97910E00C0B68B /* ViewController.h */,
+				6F42D49D1E97910E00C0B68B /* ViewController.m */,
+				6F42D49F1E97910E00C0B68B /* Main.storyboard */,
+				6F42D4A21E97910E00C0B68B /* Assets.xcassets */,
+				6F42D4A41E97910E00C0B68B /* LaunchScreen.storyboard */,
+				6F42D4A71E97910E00C0B68B /* Info.plist */,
+				6F42D4961E97910E00C0B68B /* Supporting Files */,
 			);
 			path = libdsm;
 			sourceTree = "<group>";
 		};
-		76380E8D1E9544A300B92231 /* Supporting Files */ = {
+		6F42D4961E97910E00C0B68B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				76380E8E1E9544A300B92231 /* main.m */,
+				6F42D4971E97910E00C0B68B /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		76380EA41E9544BF00B92231 /* libdsm */ = {
+		6F42D4AE1E97914B00C0B68B /* libdsm */ = {
 			isa = PBXGroup;
 			children = (
-				76380EBB1E95544E00B92231 /* mdx */,
-				76380EB71E95542300B92231 /* hmac_md5 */,
-				76380EB31E954FE100B92231 /* compat */,
-				76380EAD1E954EEF00B92231 /* const */,
-				76380EB11E954F7000B92231 /* netbios */,
-				76380EB01E954F6200B92231 /* smb */,
+				6F42D4AF1E97914B00C0B68B /* compat */,
+				6F42D4B21E97914B00C0B68B /* const */,
+				6F42D4BD1E97914B00C0B68B /* netbios */,
 			);
 			path = libdsm;
 			sourceTree = "<group>";
 		};
-		76380EA51E954C9F00B92231 /* libtasn1 */ = {
+		6F42D4AF1E97914B00C0B68B /* compat */ = {
 			isa = PBXGroup;
 			children = (
-				76380EA71E954CF200B92231 /* libtasn1-iOS.a */,
-				76380EA61E954CD900B92231 /* libtasn1.h */,
-			);
-			path = libtasn1;
-			sourceTree = "<group>";
-		};
-		76380EA91E954D0500B92231 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				76380EAA1E954D0500B92231 /* libiconv.tbd */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		76380EAD1E954EEF00B92231 /* const */ = {
-			isa = PBXGroup;
-			children = (
-				76380EAE1E954F0100B92231 /* config */,
-			);
-			path = const;
-			sourceTree = "<group>";
-		};
-		76380EAE1E954F0100B92231 /* config */ = {
-			isa = PBXGroup;
-			children = (
-				76380EAF1E954F1900B92231 /* config.h */,
-			);
-			path = config;
-			sourceTree = "<group>";
-		};
-		76380EB01E954F6200B92231 /* smb */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = smb;
-			sourceTree = "<group>";
-		};
-		76380EB11E954F7000B92231 /* netbios */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = netbios;
-			sourceTree = "<group>";
-		};
-		76380EB31E954FE100B92231 /* compat */ = {
-			isa = PBXGroup;
-			children = (
+				6F42D4B01E97914B00C0B68B /* compat.c */,
+				6F42D4B11E97914B00C0B68B /* compat.h */,
 			);
 			path = compat;
 			sourceTree = "<group>";
 		};
-		76380EB71E95542300B92231 /* hmac_md5 */ = {
+		6F42D4B21E97914B00C0B68B /* const */ = {
 			isa = PBXGroup;
 			children = (
+				6F42D4B31E97914B00C0B68B /* bdsm */,
+				6F42D4B81E97914B00C0B68B /* config */,
+				6F42D4BA1E97914B00C0B68B /* netbios */,
 			);
-			path = hmac_md5;
+			path = const;
 			sourceTree = "<group>";
 		};
-		76380EBB1E95544E00B92231 /* mdx */ = {
+		6F42D4B31E97914B00C0B68B /* bdsm */ = {
 			isa = PBXGroup;
 			children = (
-				76380EBC1E95545900B92231 /* md5 */,
+				6F42D4B41E97914B00C0B68B /* bdsm_common */,
+				6F42D4B61E97914B00C0B68B /* bdsm_debug */,
 			);
-			path = mdx;
+			path = bdsm;
 			sourceTree = "<group>";
 		};
-		76380EBC1E95545900B92231 /* md5 */ = {
+		6F42D4B41E97914B00C0B68B /* bdsm_common */ = {
 			isa = PBXGroup;
 			children = (
+				6F42D4B51E97914B00C0B68B /* bdsm_common.h */,
 			);
-			path = md5;
+			path = bdsm_common;
+			sourceTree = "<group>";
+		};
+		6F42D4B61E97914B00C0B68B /* bdsm_debug */ = {
+			isa = PBXGroup;
+			children = (
+				6F42D4B71E97914B00C0B68B /* bdsm_debug.h */,
+			);
+			path = bdsm_debug;
+			sourceTree = "<group>";
+		};
+		6F42D4B81E97914B00C0B68B /* config */ = {
+			isa = PBXGroup;
+			children = (
+				6F42D4B91E97914B00C0B68B /* config.h */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		6F42D4BA1E97914B00C0B68B /* netbios */ = {
+			isa = PBXGroup;
+			children = (
+				6F42D4BB1E97914B00C0B68B /* netbios_defs */,
+			);
+			path = netbios;
+			sourceTree = "<group>";
+		};
+		6F42D4BB1E97914B00C0B68B /* netbios_defs */ = {
+			isa = PBXGroup;
+			children = (
+				6F42D4BC1E97914B00C0B68B /* netbios_defs.h */,
+			);
+			path = netbios_defs;
+			sourceTree = "<group>";
+		};
+		6F42D4BD1E97914B00C0B68B /* netbios */ = {
+			isa = PBXGroup;
+			children = (
+				6F42D4BE1E97914B00C0B68B /* netbios_ns */,
+				6F42D4C11E97914B00C0B68B /* netbios_query */,
+			);
+			path = netbios;
+			sourceTree = "<group>";
+		};
+		6F42D4BE1E97914B00C0B68B /* netbios_ns */ = {
+			isa = PBXGroup;
+			children = (
+				6F42D4BF1E97914B00C0B68B /* netbios_ns.c */,
+				6F42D4C01E97914B00C0B68B /* netbios_ns.h */,
+			);
+			path = netbios_ns;
+			sourceTree = "<group>";
+		};
+		6F42D4C11E97914B00C0B68B /* netbios_query */ = {
+			isa = PBXGroup;
+			children = (
+				6F42D4C21E97914B00C0B68B /* netbios_query.c */,
+				6F42D4C31E97914B00C0B68B /* netbios_query.h */,
+			);
+			path = netbios_query;
+			sourceTree = "<group>";
+		};
+		6F42D4C71E9791B100C0B68B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F42D4C81E9791B100C0B68B /* libiconv.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		76380E891E9544A300B92231 /* libdsm */ = {
+		6F42D4921E97910E00C0B68B /* libdsm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76380EA11E9544A300B92231 /* Build configuration list for PBXNativeTarget "libdsm" */;
+			buildConfigurationList = 6F42D4AA1E97910E00C0B68B /* Build configuration list for PBXNativeTarget "libdsm" */;
 			buildPhases = (
-				76380E861E9544A300B92231 /* Sources */,
-				76380E871E9544A300B92231 /* Frameworks */,
-				76380E881E9544A300B92231 /* Resources */,
+				6F42D48F1E97910E00C0B68B /* Sources */,
+				6F42D4901E97910E00C0B68B /* Frameworks */,
+				6F42D4911E97910E00C0B68B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -196,26 +227,26 @@
 			);
 			name = libdsm;
 			productName = libdsm;
-			productReference = 76380E8A1E9544A300B92231 /* libdsm.app */;
+			productReference = 6F42D4931E97910E00C0B68B /* libdsm.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		76380E821E9544A300B92231 /* Project object */ = {
+		6F42D48B1E97910E00C0B68B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = trek2000;
+				ORGANIZATIONNAME = trekvn;
 				TargetAttributes = {
-					76380E891E9544A300B92231 = {
-						CreatedOnToolsVersion = 8.3;
+					6F42D4921E97910E00C0B68B = {
+						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 5934F7X3NB;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 76380E851E9544A300B92231 /* Build configuration list for PBXProject "libdsm" */;
+			buildConfigurationList = 6F42D48E1E97910E00C0B68B /* Build configuration list for PBXProject "libdsm" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -223,55 +254,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 76380E811E9544A300B92231;
-			productRefGroup = 76380E8B1E9544A300B92231 /* Products */;
+			mainGroup = 6F42D48A1E97910E00C0B68B;
+			productRefGroup = 6F42D4941E97910E00C0B68B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				76380E891E9544A300B92231 /* libdsm */,
+				6F42D4921E97910E00C0B68B /* libdsm */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		76380E881E9544A300B92231 /* Resources */ = {
+		6F42D4911E97910E00C0B68B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76380E9D1E9544A300B92231 /* LaunchScreen.storyboard in Resources */,
-				76380E9A1E9544A300B92231 /* Assets.xcassets in Resources */,
-				76380E981E9544A300B92231 /* Main.storyboard in Resources */,
+				6F42D4A61E97910E00C0B68B /* LaunchScreen.storyboard in Resources */,
+				6F42D4A31E97910E00C0B68B /* Assets.xcassets in Resources */,
+				6F42D4A11E97910E00C0B68B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		76380E861E9544A300B92231 /* Sources */ = {
+		6F42D48F1E97910E00C0B68B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76380E951E9544A300B92231 /* ViewController.m in Sources */,
-				76380E921E9544A300B92231 /* AppDelegate.m in Sources */,
-				76380E8F1E9544A300B92231 /* main.m in Sources */,
+				6F42D4C51E97914B00C0B68B /* netbios_ns.c in Sources */,
+				6F42D49E1E97910E00C0B68B /* ViewController.m in Sources */,
+				6F42D4C41E97914B00C0B68B /* compat.c in Sources */,
+				6F42D49B1E97910E00C0B68B /* AppDelegate.m in Sources */,
+				6F42D4981E97910E00C0B68B /* main.m in Sources */,
+				6F42D4C61E97914B00C0B68B /* netbios_query.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		76380E961E9544A300B92231 /* Main.storyboard */ = {
+		6F42D49F1E97910E00C0B68B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				76380E971E9544A300B92231 /* Base */,
+				6F42D4A01E97910E00C0B68B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		76380E9B1E9544A300B92231 /* LaunchScreen.storyboard */ = {
+		6F42D4A41E97910E00C0B68B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				76380E9C1E9544A300B92231 /* Base */,
+				6F42D4A51E97910E00C0B68B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -279,7 +313,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		76380E9F1E9544A300B92231 /* Debug */ = {
+		6F42D4A81E97910E00C0B68B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -327,7 +361,7 @@
 			};
 			name = Debug;
 		};
-		76380EA01E9544A300B92231 /* Release */ = {
+		6F42D4A91E97910E00C0B68B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -369,7 +403,7 @@
 			};
 			name = Release;
 		};
-		76380EA21E9544A300B92231 /* Debug */ = {
+		6F42D4AB1E97910E00C0B68B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -377,16 +411,12 @@
 				INFOPLIST_FILE = libdsm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libdsm/libtasn1",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.trek2000.libdsm;
+				PRODUCT_BUNDLE_IDENTIFIER = trekvn.libdsm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		76380EA31E9544A300B92231 /* Release */ = {
+		6F42D4AC1E97910E00C0B68B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -394,11 +424,7 @@
 				INFOPLIST_FILE = libdsm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libdsm/libtasn1",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.trek2000.libdsm;
+				PRODUCT_BUNDLE_IDENTIFIER = trekvn.libdsm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -406,24 +432,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		76380E851E9544A300B92231 /* Build configuration list for PBXProject "libdsm" */ = {
+		6F42D48E1E97910E00C0B68B /* Build configuration list for PBXProject "libdsm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76380E9F1E9544A300B92231 /* Debug */,
-				76380EA01E9544A300B92231 /* Release */,
+				6F42D4A81E97910E00C0B68B /* Debug */,
+				6F42D4A91E97910E00C0B68B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76380EA11E9544A300B92231 /* Build configuration list for PBXNativeTarget "libdsm" */ = {
+		6F42D4AA1E97910E00C0B68B /* Build configuration list for PBXNativeTarget "libdsm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76380EA21E9544A300B92231 /* Debug */,
-				76380EA31E9544A300B92231 /* Release */,
+				6F42D4AB1E97910E00C0B68B /* Debug */,
+				6F42D4AC1E97910E00C0B68B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 76380E821E9544A300B92231 /* Project object */;
+	rootObject = 6F42D48B1E97910E00C0B68B /* Project object */;
 }
