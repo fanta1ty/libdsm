@@ -5,33 +5,32 @@
 //  Created by trekvn on 4/7/17.
 //  Copyright © 2017 trekvn. All rights reserved.
 //
-
+#ifdef __OBJC__
 #ifndef smb_types_h
 #define smb_types_h
 
-#include <stddef.h>
-#include <stdint.h>
+#import <stddef.h>
+#import <stdint.h>
+#import <stddef.h>
+#import <stdbool.h>
 
-#include <stddef.h>
-#include <stdbool.h>
-
-#include "libtasn1.h"
+#import "libtasn1.h"
 
 #if !defined _WIN32
-# include <netinet/ip.h>
+#   import<netinet/ip.h>
 #else
-# include <winsock2.h>
+#   import<winsock2.h>
 #endif
 
-#include "smb_buffer.h"
-#include "smb_packets.h"
-
+#import "smbBuffer.h"
+#import "smb_packets.h"
 
 #define _FILE_OFFSET_BITS 64
 #if defined(__ANDROID__)
 # undef  off_t
 # define off_t off64_t
 #endif
+
 /*!smb_tid
  * The id of a connection to a share within a session.
  */
@@ -176,3 +175,4 @@ struct smb_message
 };
 
 #endif /* smb_types_h */
+#endif
